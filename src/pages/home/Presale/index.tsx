@@ -5,14 +5,14 @@ import {
   PresaleText,
   PresaleImage,
 } from "./index.styled";
-import Photo from "../../../assets/bb-reveal.gif";
+import capitalize from "../../../assets/bb-reveal.gif";
 
 const Presale = () => {
   return (
     <PresaleContainer>
       <PresaleContent>
         <PresaleImage>
-          <img src={Photo} width="320px" alt="photo" />
+          <img src={capitalize} width="320px" alt="capitalize" />
         </PresaleImage>
         <PresaleText>
           <h1>Presale & Reveal</h1>

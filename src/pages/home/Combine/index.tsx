@@ -5,7 +5,7 @@ import {
   CombineText,
   CombineImage,
 } from "./index.styled";
-import Photo from "../../../assets/nextimg/bittybot-combine.png/1080/75c00d.png";
+import capitalize from "../../../assets/nextimg/bittybot-combine.png/1080/75c00d.png";
 
 const Combine = () => {
   return (
@@ -22,7 +22,7 @@ const Combine = () => {
           </p>
         </CombineText>
         <CombineImage>
-          <img src={Photo} width="440px" alt="photo" />
+          <img src={capitalize} width="440px" alt="capitalize" />
         </CombineImage>
       </CombineContent>
     </CombineContainer>

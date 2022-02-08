@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { FooterContainer } from "./index.styled";
 const Footer = () => {
   // const [year, setYear] = useState({});

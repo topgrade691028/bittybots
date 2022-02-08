@@ -5,7 +5,7 @@ import {
   DescriptionText,
   DescriptionImage,
 } from "./index.styled";
-import Photo from "../../../assets/nextimg/bittybot-engines.png/1080/7508ad.png";
+import capitalize from "../../../assets/nextimg/bittybot-engines.png/1080/7508ad.png";
 const Description = () => {
   return (
     <DescriptionContainer>
@@ -28,7 +28,7 @@ const Description = () => {
           </p>
         </DescriptionText>
         <DescriptionImage>
-          <img src={Photo} width="440px" alt="photo" />
+          <img src={capitalize} width="440px" alt="capitalize" />
         </DescriptionImage>
       </DescriptionContent>
     </DescriptionContainer>

@@ -56,7 +56,7 @@ const AboutUs = () => {
         </AboutUsText>
         <AboutUsImage>
           <Item>
-            <img src={Dev1} width="208px" alt="photo" />
+            <img src={Dev1} width="208px" alt="capitalize" />
 
             <p>
               <a href="/">kixboy</a>
@@ -64,7 +64,7 @@ const AboutUs = () => {
             </p>
           </Item>
           <Item>
-            <img src={Dev2} width="208px" alt="photo" />
+            <img src={Dev2} width="208px" alt="capitalize" />
             <p>
               <a href="/">solazy</a>
               <span> (dev)</span>

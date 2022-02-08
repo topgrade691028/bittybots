@@ -6,13 +6,13 @@ import {
   AccessoryContent,
   AccessoryItem,
 } from "./index.styled";
-import Photo1 from "../../../assets/parts/accessory/02cf30.gif";
-import Photo2 from "../../../assets/parts/accessory/03f9b6.gif";
-import Photo3 from "../../../assets/parts/accessory/05f15b.gif";
-import Photo4 from "../../../assets/parts/accessory/00065d.gif";
-import Photo5 from "../../../assets/parts/accessory/01472e.gif";
-import Photo6 from "../../../assets/parts/accessory/06900b.gif";
-import Photo7 from "../../../assets/parts/accessory/048136.gif";
+import capitalize1 from "../../../assets/parts/accessory/02cf30.gif";
+import capitalize2 from "../../../assets/parts/accessory/03f9b6.gif";
+import capitalize3 from "../../../assets/parts/accessory/05f15b.gif";
+import capitalize4 from "../../../assets/parts/accessory/00065d.gif";
+import capitalize5 from "../../../assets/parts/accessory/01472e.gif";
+import capitalize6 from "../../../assets/parts/accessory/06900b.gif";
+import capitalize7 from "../../../assets/parts/accessory/048136.gif";
 
 const Accessory = () => {
   return (
@@ -23,25 +23,25 @@ const Accessory = () => {
       <AccessoryDetail>Power: 400</AccessoryDetail>
       <AccessoryContent>
         <AccessoryItem>
-          <img src={Photo1} alt="photo" />
+          <img src={capitalize1} alt="capitalize" />
         </AccessoryItem>
         <AccessoryItem>
-          <img src={Photo2} alt="photo" />
+          <img src={capitalize2} alt="capitalize" />
         </AccessoryItem>
         <AccessoryItem>
-          <img src={Photo3} alt="photo" />
+          <img src={capitalize3} alt="capitalize" />
         </AccessoryItem>
         <AccessoryItem>
-          <img src={Photo4} alt="photo" />
+          <img src={capitalize4} alt="capitalize" />
         </AccessoryItem>
         <AccessoryItem>
-          <img src={Photo5} alt="photo" />
+          <img src={capitalize5} alt="capitalize" />
         </AccessoryItem>
         <AccessoryItem>
-          <img src={Photo6} alt="photo" />
+          <img src={capitalize6} alt="capitalize" />
         </AccessoryItem>
         <AccessoryItem>
-          <img src={Photo7} alt="photo" />
+          <img src={capitalize7} alt="capitalize" />
         </AccessoryItem>
       </AccessoryContent>
     </AccessoryContainer>

@@ -6,22 +6,22 @@ import {
   BodyContent,
   BodyItem,
 } from "./index.styled";
-import Photo1 from "../../../assets/parts/body/04fb74.gif";
-import Photo2 from "../../../assets/parts/body/05d4a0.gif";
-import Photo3 from "../../../assets/parts/body/09dc9c.gif";
-import Photo4 from "../../../assets/parts/body/10c8c0.gif";
-import Photo5 from "../../../assets/parts/body/13c9c0.gif";
-import Photo6 from "../../../assets/parts/body/14f488.gif";
-import Photo7 from "../../../assets/parts/body/15d49a.gif";
-import Photo8 from "../../../assets/parts/body/068f53.gif";
-import Photo9 from "../../../assets/parts/body/089f7d.gif";
-import Photo10 from "../../../assets/parts/body/0117eb.gif";
-import Photo11 from "../../../assets/parts/body/1109a6.gif";
-import Photo12 from "../../../assets/parts/body/1223de.gif";
-import Photo13 from "../../../assets/parts/body/006625.gif";
-import Photo14 from "../../../assets/parts/body/021797.gif";
-import Photo15 from "../../../assets/parts/body/030535.gif";
-import Photo16 from "../../../assets/parts/body/072917.gif";
+import capitalize1 from "../../../assets/parts/body/04fb74.gif";
+import capitalize2 from "../../../assets/parts/body/05d4a0.gif";
+import capitalize3 from "../../../assets/parts/body/09dc9c.gif";
+import capitalize4 from "../../../assets/parts/body/10c8c0.gif";
+import capitalize5 from "../../../assets/parts/body/13c9c0.gif";
+import capitalize6 from "../../../assets/parts/body/14f488.gif";
+import capitalize7 from "../../../assets/parts/body/15d49a.gif";
+import capitalize8 from "../../../assets/parts/body/068f53.gif";
+import capitalize9 from "../../../assets/parts/body/089f7d.gif";
+import capitalize10 from "../../../assets/parts/body/0117eb.gif";
+import capitalize11 from "../../../assets/parts/body/1109a6.gif";
+import capitalize12 from "../../../assets/parts/body/1223de.gif";
+import capitalize13 from "../../../assets/parts/body/006625.gif";
+import capitalize14 from "../../../assets/parts/body/021797.gif";
+import capitalize15 from "../../../assets/parts/body/030535.gif";
+import capitalize16 from "../../../assets/parts/body/072917.gif";
 
 const Body = () => {
   return (
@@ -32,52 +32,52 @@ const Body = () => {
       <BodyDetail>Power: 80</BodyDetail>
       <BodyContent>
         <BodyItem>
-          <img src={Photo1} alt="photo" />
+          <img src={capitalize1} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo2} alt="photo" />
+          <img src={capitalize2} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo3} alt="photo" />
+          <img src={capitalize3} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo4} alt="photo" />
+          <img src={capitalize4} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo5} alt="photo" />
+          <img src={capitalize5} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo6} alt="photo" />
+          <img src={capitalize6} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo7} alt="photo" />
+          <img src={capitalize7} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo8} alt="photo" />
+          <img src={capitalize8} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo9} alt="photo" />
+          <img src={capitalize9} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo10} alt="photo" />
+          <img src={capitalize10} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo11} alt="photo" />
+          <img src={capitalize11} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo12} alt="photo" />
+          <img src={capitalize12} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo13} alt="photo" />
+          <img src={capitalize13} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo14} alt="photo" />
+          <img src={capitalize14} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo15} alt="photo" />
+          <img src={capitalize15} alt="capitalize" />
         </BodyItem>
         <BodyItem>
-          <img src={Photo16} alt="photo" />
+          <img src={capitalize16} alt="capitalize" />
         </BodyItem>
       </BodyContent>
     </BodyContainer>

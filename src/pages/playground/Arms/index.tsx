@@ -6,22 +6,22 @@ import {
   ArmsContent,
   ArmsItem,
 } from "./index.styled";
-import Photo1 from "../../../assets/parts/arms/00c57f.gif";
-import Photo2 from "../../../assets/parts/arms/01e0d6.gif";
-import Photo3 from "../../../assets/parts/arms/04eecb.gif";
-import Photo4 from "../../../assets/parts/arms/08eb0e.gif";
-import Photo5 from "../../../assets/parts/arms/09f9e0.gif";
-import Photo6 from "../../../assets/parts/arms/13b3db.gif";
-import Photo7 from "../../../assets/parts/arms/032c56.gif";
-import Photo8 from "../../../assets/parts/arms/073f0f.gif";
-import Photo9 from "../../../assets/parts/arms/1233da.gif";
-import Photo10 from "../../../assets/parts/arms/1402fd.gif";
-import Photo11 from "../../../assets/parts/arms/1564d0.gif";
-import Photo12 from "../../../assets/parts/arms/020906.gif";
-import Photo13 from "../../../assets/parts/arms/051009.gif";
-import Photo14 from "../../../assets/parts/arms/061646.gif";
-import Photo15 from "../../../assets/parts/arms/104773.gif";
-import Photo16 from "../../../assets/parts/arms/117515.gif";
+import capitalize1 from "../../../assets/parts/arms/00c57f.gif";
+import capitalize2 from "../../../assets/parts/arms/01e0d6.gif";
+import capitalize3 from "../../../assets/parts/arms/04eecb.gif";
+import capitalize4 from "../../../assets/parts/arms/08eb0e.gif";
+import capitalize5 from "../../../assets/parts/arms/09f9e0.gif";
+import capitalize6 from "../../../assets/parts/arms/13b3db.gif";
+import capitalize7 from "../../../assets/parts/arms/032c56.gif";
+import capitalize8 from "../../../assets/parts/arms/073f0f.gif";
+import capitalize9 from "../../../assets/parts/arms/1233da.gif";
+import capitalize10 from "../../../assets/parts/arms/1402fd.gif";
+import capitalizealize11 from "../../../assets/parts/arms/1564d0.gif";
+import capitalize12 from "../../../assets/parts/arms/020906.gif";
+import capitalize13 from "../../../assets/parts/arms/051009.gif";
+import capitalize14 from "../../../assets/parts/arms/061646.gif";
+import capitalize15 from "../../../assets/parts/arms/104773.gif";
+import capitalize16 from "../../../assets/parts/arms/117515.gif";
 
 const Arms = () => {
   return (
@@ -32,52 +32,52 @@ const Arms = () => {
       <ArmsDetail>Power: 40</ArmsDetail>
       <ArmsContent>
         <ArmsItem>
-          <img src={Photo1} alt="photo" />
+          <img src={capitalize1} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo2} alt="photo" />
+          <img src={capitalize2} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo3} alt="photo" />
+          <img src={capitalize3} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo4} alt="photo" />
+          <img src={capitalize4} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo5} alt="photo" />
+          <img src={capitalize5} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo6} alt="photo" />
+          <img src={capitalize6} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo7} alt="photo" />
+          <img src={capitalize7} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo8} alt="photo" />
+          <img src={capitalize8} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo9} alt="photo" />
+          <img src={capitalize9} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo10} alt="photo" />
+          <img src={capitalize10} alt="capitalizealize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo11} alt="photo" />
+          <img src={capitalizealize11} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo12} alt="photo" />
+          <img src={capitalize12} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo13} alt="photo" />
+          <img src={capitalize13} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo14} alt="photo" />
+          <img src={capitalize14} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo15} alt="photo" />
+          <img src={capitalize15} alt="capitalize" />
         </ArmsItem>
         <ArmsItem>
-          <img src={Photo16} alt="photo" />
+          <img src={capitalize16} alt="capitalize" />
         </ArmsItem>
       </ArmsContent>
     </ArmsContainer>

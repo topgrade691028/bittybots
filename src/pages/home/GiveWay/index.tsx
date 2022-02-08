@@ -25,9 +25,9 @@ const GiveWay = () => {
           </GiveWayTitle>
           <GiveWayDescription>
             <GiveWayImageGroup>
-              <img src={one} width="100%" alt="photo" />
-              <img src={two} width="100%" alt="photo" />
-              <img src={three} width="100%" alt="photo" />
+              <img src={one} width="100%" alt="capitalize" />
+              <img src={two} width="100%" alt="capitalize" />
+              <img src={three} width="100%" alt="capitalize" />
             </GiveWayImageGroup>
             <p>
               Reveal a BittyBot with one of these BB1 (BittyBots 1ETH)

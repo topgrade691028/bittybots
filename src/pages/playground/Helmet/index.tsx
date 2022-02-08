@@ -6,21 +6,21 @@ import {
   HelmetContent,
   HelmetItem,
 } from "./index.styled";
-import Photo1 from "../../../assets/parts/helmet/07e2db.gif";
-import Photo2 from "../../../assets/parts/helmet/09a4d7.gif";
-import Photo3 from "../../../assets/parts/helmet/13b730.gif";
-import Photo4 from "../../../assets/parts/helmet/034d7f.gif";
-import Photo5 from "../../../assets/parts/helmet/040ff8.gif";
-import Photo6 from "../../../assets/parts/helmet/0064f8.gif";
-import Photo7 from "../../../assets/parts/helmet/069cbe.gif";
-import Photo8 from "../../../assets/parts/helmet/100dec.gif";
-import Photo9 from "../../../assets/parts/helmet/146a94.gif";
-import Photo10 from "../../../assets/parts/helmet/157f0e.gif";
-import Photo11 from "../../../assets/parts/helmet/05586a.gif";
-import Photo12 from "../../../assets/parts/helmet/08535c.gif";
-import Photo13 from "../../../assets/parts/helmet/11594f.gif";
-import Photo14 from "../../../assets/parts/helmet/021476.gif";
-import Photo15 from "../../../assets/parts/helmet/129227.gif";
+import capitalize1 from "../../../assets/parts/helmet/07e2db.gif";
+import capitalize2 from "../../../assets/parts/helmet/09a4d7.gif";
+import capitalize3 from "../../../assets/parts/helmet/13b730.gif";
+import capitalize4 from "../../../assets/parts/helmet/034d7f.gif";
+import capitalize5 from "../../../assets/parts/helmet/040ff8.gif";
+import capitalize6 from "../../../assets/parts/helmet/0064f8.gif";
+import capitalize7 from "../../../assets/parts/helmet/069cbe.gif";
+import capitalize8 from "../../../assets/parts/helmet/100dec.gif";
+import capitalize9 from "../../../assets/parts/helmet/146a94.gif";
+import capitalize10 from "../../../assets/parts/helmet/157f0e.gif";
+import capitalize11 from "../../../assets/parts/helmet/05586a.gif";
+import capitalize12 from "../../../assets/parts/helmet/08535c.gif";
+import capitalize13 from "../../../assets/parts/helmet/11594f.gif";
+import capitalize14 from "../../../assets/parts/helmet/021476.gif";
+import capitalize15 from "../../../assets/parts/helmet/129227.gif";
 
 const Helmet = () => {
   return (
@@ -31,52 +31,52 @@ const Helmet = () => {
       <HelmetDetail>Power: 40</HelmetDetail>
       <HelmetContent>
         <HelmetItem>
-          <img src={Photo1} alt="photo" />
+          <img src={capitalize1} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo2} alt="photo" />
+          <img src={capitalize2} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo3} alt="photo" />
+          <img src={capitalize3} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo4} alt="photo" />
+          <img src={capitalize4} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo5} alt="photo" />
+          <img src={capitalize5} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo6} alt="photo" />
+          <img src={capitalize6} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo7} alt="photo" />
+          <img src={capitalize7} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo8} alt="photo" />
+          <img src={capitalize8} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo9} alt="photo" />
+          <img src={capitalize9} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo10} alt="photo" />
+          <img src={capitalize10} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo11} alt="photo" />
+          <img src={capitalize11} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo12} alt="photo" />
+          <img src={capitalize12} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo13} alt="photo" />
+          <img src={capitalize13} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo14} alt="photo" />
+          <img src={capitalize14} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo15} alt="photo" />
+          <img src={capitalize15} alt="capitalize" />
         </HelmetItem>
         <HelmetItem>
-          <img src={Photo5} alt="photo" />
+          <img src={capitalize5} alt="capitalize" />
         </HelmetItem>
       </HelmetContent>
     </HelmetContainer>
