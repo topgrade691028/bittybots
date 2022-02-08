@@ -1,8 +1,5 @@
-// export default Slider;
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { SliderContainer, SliderContent } from "./index.styled";
 import character1 from "../../assets/example_1.gif";
 import character2 from "../../assets/example_2.gif";
 import character3 from "../../assets/example_3.gif";
@@ -36,6 +33,20 @@ export default function Slider() {
           delay: 1000,
         }}
         modules={[Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 3,
+          },
+          575: {
+            slidesPerView: 5,
+          },
+          991: {
+            slidesPerView: 7,
+          },
+          1400: {
+            slidesPerView: 10,
+          },
+        }}
         className="mySwiper"
       >
         <SwiperSlide>
