@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   MintContainer,
@@ -14,6 +14,9 @@ const Mint = () => {
   const [mintNumber, setMintNumber] = useState(1);
   const [TotalValue, setTotalValue] = useState(0);
   const [displayFlag, setDisplayFlag] = useState(false);
+  useEffect(() => {
+    setDisplayFlag(false);
+  }, []);
   const setValue = (e: any) => {
     let val = e.target.value;
     setMintNumber(Number(val));

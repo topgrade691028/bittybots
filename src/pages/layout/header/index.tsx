@@ -7,7 +7,6 @@ import {
   Button,
   HeaderContent,
   MobileHeaderContent,
-  Background,
 } from "./index.styled";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Logo from "../../../assets/logo.png";
@@ -79,7 +78,6 @@ const Header = () => {
             <Link to="/">Discord</Link>
             <Button onClick={() => Connect()}>Switch To Polygon Chain</Button>
           </MobileHeaderContent>
-          {/* <Background /> */}
         </>
       )}
     </HeaderContainer>

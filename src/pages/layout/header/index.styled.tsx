@@ -60,15 +60,7 @@ export const MobileHeaderContent = styled.div`
     text-decoration: none;
   }
 `;
-export const Background = styled.div`
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.8);
-`;
+
 export const Navbar = styled.div`
   display: flex;
   align-items: center;
