@@ -38,16 +38,16 @@ const Header = () => {
           </span>
         </Navbar>
         <ConnectMenu>
-          <Link to="/">
+          <Link to="https://twitter.com/bittybotsnft">
             <img src={Twitter} width="20px" height="27px" alt="Twitter" />
           </Link>
-          <Link to="/">
+          <Link to="https://discord.gg/epgNmkG3ZT">
             <img src={Discord} width="20px" height="27px" alt="Discord" />
           </Link>
-          <Link to="/">
+          <Link to="https://medium.com/chubbiesnft/bittybots-whitepaper-c2d3550ab89d">
             <img src={Medium} width="20px" height="27px" alt="Medium" />
           </Link>
-          <Link to="/">
+          <Link to="http://opensea.io/collection/bittybots">
             <img src={Opensea} width="20px" height="27px" alt="Opensea" />
           </Link>
           <Button onClick={() => Connect()}>Switch To Polygon Chain</Button>
