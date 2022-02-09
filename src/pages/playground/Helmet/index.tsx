@@ -21,8 +21,17 @@ import capitalize12 from "../../../assets/parts/helmet/08535c.gif";
 import capitalize13 from "../../../assets/parts/helmet/11594f.gif";
 import capitalize14 from "../../../assets/parts/helmet/021476.gif";
 import capitalize15 from "../../../assets/parts/helmet/129227.gif";
-
-const Helmet = () => {
+type HelmetProps = {
+  SetHelmet: Function;
+};
+const Helmet = ({ SetHelmet }: HelmetProps) => {
+  const setItem = (e: any) => {
+    SetHelmet(e.target.src);
+    for (let i = 1; i <= 15; i++) {
+      document.getElementById("helmet" + i)?.classList.remove("border");
+    }
+    document.getElementById("helmet" + e.target.id)?.classList.add("border");
+  };
   return (
     <HelmetContainer>
       <HelmetTitle>
@@ -30,53 +39,125 @@ const Helmet = () => {
       </HelmetTitle>
       <HelmetDetail>Power: 40</HelmetDetail>
       <HelmetContent>
-        <HelmetItem>
-          <img src={capitalize1} alt="capitalize" />
+        <HelmetItem id="helmet1">
+          <img
+            id="1"
+            src={capitalize1}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize2} alt="capitalize" />
+        <HelmetItem id="helmet2">
+          <img
+            id="2"
+            src={capitalize2}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize3} alt="capitalize" />
+        <HelmetItem id="helmet3">
+          <img
+            id="3"
+            src={capitalize3}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize4} alt="capitalize" />
+        <HelmetItem id="helmet4">
+          <img
+            id="4"
+            src={capitalize4}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize5} alt="capitalize" />
+        <HelmetItem id="helmet5">
+          <img
+            id="5"
+            src={capitalize5}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize6} alt="capitalize" />
+        <HelmetItem id="helmet6">
+          <img
+            id="6"
+            src={capitalize6}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize7} alt="capitalize" />
+        <HelmetItem id="helmet7">
+          <img
+            id="7"
+            src={capitalize7}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize8} alt="capitalize" />
+        <HelmetItem id="helmet8">
+          <img
+            id="8"
+            src={capitalize8}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize9} alt="capitalize" />
+        <HelmetItem id="helmet9">
+          <img
+            id="9"
+            src={capitalize9}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize10} alt="capitalize" />
+        <HelmetItem id="helmet10">
+          <img
+            id="10"
+            src={capitalize10}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize11} alt="capitalize" />
+        <HelmetItem id="helmet11">
+          <img
+            id="11"
+            src={capitalize11}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize12} alt="capitalize" />
+        <HelmetItem id="helmet12">
+          <img
+            id="12"
+            src={capitalize12}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize13} alt="capitalize" />
+        <HelmetItem id="helmet13">
+          <img
+            id="13"
+            src={capitalize13}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize14} alt="capitalize" />
+        <HelmetItem id="helmet14">
+          <img
+            id="14"
+            src={capitalize14}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize15} alt="capitalize" />
-        </HelmetItem>
-        <HelmetItem>
-          <img src={capitalize5} alt="capitalize" />
+        <HelmetItem id="helmet15">
+          <img
+            id="15"
+            src={capitalize15}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </HelmetItem>
       </HelmetContent>
     </HelmetContainer>

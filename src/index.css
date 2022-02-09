@@ -8,3 +8,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+.activeNavbarItem {
+  color: #e91e63 !important;
+}
+@media screen and (max-width: 854px) {
+  .activeNavbarItem {
+    color: #ffffff !important;
+  }
+}
+.border {
+  border: 4px solid #e91e63;
+}
+.scrollContainer {
+  background-color: white !important;
+}

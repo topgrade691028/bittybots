@@ -22,6 +22,9 @@ export const PlayGroundDisplay = styled.div`
     width: 100%;
     height: auto;
   }
+  img {
+    position: absolute;
+  }
 `;
 export const PlayGroundItem = styled.div`
   display: flex;

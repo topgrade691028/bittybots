@@ -4,10 +4,11 @@ export const HeaderContainer = styled.div`
   min-height: 48px;
   width: 100%;
   align-items: center;
-  transition: all 0.85s ease-in-out;
+  /* transition: all 0.85s ease-in-out; */
   position: sticky;
   top: 0;
   z-index: 9999;
+
   .logo {
     z-index: 999999;
     margin-top: -10px;
@@ -15,6 +16,8 @@ export const HeaderContainer = styled.div`
   .menu_icon {
     font-size: 40px;
     display: none;
+    cursor: pointer;
+    margin-top: 20px;
   }
   @media screen and (max-width: 855px) {
     justify-content: space-between;
@@ -22,7 +25,7 @@ export const HeaderContainer = styled.div`
     box-sizing: border-box;
     .menu_icon {
       display: inline-block;
-
+      margin-top: 20px;
       z-index: 10;
     }
   }
@@ -36,35 +39,38 @@ export const HeaderContent = styled.div`
   }
 `;
 export const MobileHeaderContent = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  padding-top: 50px;
-  box-sizing: border-box;
-  background-color: white;
-  a {
-    font-family: Chivo, sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    text-decoration: none;
-    min-height: ;
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-    color: #04396c;
-    text-decoration: none;
+  display: none;
+  @media screen and (max-width: 854px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: white;
+    a {
+      color: #04396c;
+      /* font-family: Chivo, sans-serif; */
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      text-decoration: none;
+      min-height: ;
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+      text-decoration: none;
+    }
   }
 `;
 
 export const Navbar = styled.div`
   display: flex;
   align-items: center;
-  font-family: Chivo, sans-serif;
+  /* font-family: Chivo, sans-serif; */
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
@@ -74,11 +80,12 @@ export const Navbar = styled.div`
     text-decoration: none;
     margin-left: 20px;
   }
-  a:active,
-  :focus {
+  /* span:active,
+  span:focus {
     color: #e91e63;
-  }
+  } */
 `;
+export const Span = styled.span``;
 export const ConnectMenu = styled.div`
   display: flex;
   align-items: center;

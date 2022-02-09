@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   HeaderContainer,
@@ -14,28 +14,121 @@ import Twitter from "../../../assets/Twitter.svg";
 import Discord from "../../../assets/Discord.svg";
 import Medium from "../../../assets/Medium.svg";
 import Opensea from "../../../assets/Opensea.svg";
+declare global {
+  interface Window {
+    ethereum: any;
+  }
+}
+
 const Header = () => {
   const [showFlag, setShowFlag] = useState(false);
+  const [address, setAddress] = useState("");
+  const [y, setY] = useState(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => handleNavigation(e));
+
+    return () => {
+      // return a cleanup function to unregister our function since its gonna run multiple times
+      window.removeEventListener("scroll", (e) => handleNavigation(e));
+    };
+  }, [y]);
+  const handleNavigation = (e: any) => {
+    const window = e.currentTarget;
+    if (y > 10) {
+      document.getElementById("container")?.classList.add("scrollContainer");
+    } else if (y <= 10) {
+      document.getElementById("container")?.classList.remove("scrollContainer");
+    }
+    setY(window.scrollY);
+  };
   const Connect = () => {
-    alert("welcome to visit Home");
+    const { ethereum } = window;
+    ethereum
+      .enable()
+      .then((s: any) => {
+        setAddress(ethereum.selectedAddress);
+        let temp =
+          ethereum.selectedAddress.slice(0, 5) +
+          "..." +
+          ethereum.selectedAddress.slice(-3, -1);
+        setAddress(temp);
+      })
+      .catch((err: any) => console.log(err));
+  };
+  const ItemClick = (e: number) => {
+    if (e === 1) {
+      document.getElementById("navbarItem1")?.classList.add("activeNavbarItem");
+      document
+        .getElementById("navbarItem2")
+        ?.classList.remove("activeNavbarItem");
+      document
+        .getElementById("navbarItem3")
+        ?.classList.remove("activeNavbarItem");
+      document
+        .getElementById("navbarItem4")
+        ?.classList.remove("activeNavbarItem");
+    } else if (e === 2) {
+      document
+        .getElementById("navbarItem1")
+        ?.classList.remove("activeNavbarItem");
+      document.getElementById("navbarItem2")?.classList.add("activeNavbarItem");
+      document
+        .getElementById("navbarItem3")
+        ?.classList.remove("activeNavbarItem");
+      document
+        .getElementById("navbarItem4")
+        ?.classList.remove("activeNavbarItem");
+    } else if (e === 3) {
+      document
+        .getElementById("navbarItem1")
+        ?.classList.remove("activeNavbarItem");
+      document
+        .getElementById("navbarItem2")
+        ?.classList.remove("activeNavbarItem");
+      document.getElementById("navbarItem3")?.classList.add("activeNavbarItem");
+      document
+        .getElementById("navbarItem4")
+        ?.classList.remove("activeNavbarItem");
+    } else if (e === 4) {
+      document
+        .getElementById("navbarItem1")
+        ?.classList.remove("activeNavbarItem");
+      document
+        .getElementById("navbarItem2")
+        ?.classList.remove("activeNavbarItem");
+      document
+        .getElementById("navbarItem3")
+        ?.classList.remove("activeNavbarItem");
+      document.getElementById("navbarItem4")?.classList.add("activeNavbarItem");
+    }
   };
   return (
-    <HeaderContainer>
+    <HeaderContainer id="container">
       <img src={Logo} className="logo" width="56px" height="56px" alt="Logo" />
       <HeaderContent>
         <Navbar>
-          <span>
-            <Link to="/">Home</Link>
-          </span>
-          <span>
-            <Link to="/playground">Playground</Link>
-          </span>
-          <span>
-            <Link to="/collection">My Bots</Link>
-          </span>
-          <span>
-            <Link to="/faq">FAQ</Link>
-          </span>
+          <Link to="/">
+            <div id="navbarItem1" onClick={() => ItemClick(1)}>
+              Home
+            </div>
+          </Link>
+
+          <Link to="/playground">
+            <div id="navbarItem2" onClick={() => ItemClick(2)}>
+              Playground
+            </div>
+          </Link>
+          <Link to="/collection">
+            <div id="navbarItem3" onClick={() => ItemClick(3)}>
+              My Bots
+            </div>
+          </Link>
+          <Link to="/faq">
+            <div id="navbarItem4" onClick={() => ItemClick(4)}>
+              FAQ
+            </div>
+          </Link>
         </Navbar>
         <ConnectMenu>
           <Link to="https://twitter.com/bittybotsnft">
@@ -50,7 +143,9 @@ const Header = () => {
           <Link to="http://opensea.io/collection/bittybots">
             <img src={Opensea} width="20px" height="27px" alt="Opensea" />
           </Link>
-          <Button onClick={() => Connect()}>Switch To Polygon Chain</Button>
+          <Button onClick={() => Connect()}>
+            {address !== "" ? address : "Switch To Polygon Chain"}
+          </Button>
         </ConnectMenu>
       </HeaderContent>
       {!showFlag && (
@@ -68,15 +163,32 @@ const Header = () => {
       {showFlag && (
         <>
           <MobileHeaderContent>
-            <Link to="/">Home</Link>
-            <Link to="/">Playground</Link>
-            <Link to="/">My Bots</Link>
-            <Link to="/">Leaderboard</Link>
-            <Link to="/">FAQ</Link>
+            <Link to="/">
+              <div id="navbarItem1" onClick={() => ItemClick(1)}>
+                Home
+              </div>
+            </Link>
+            <Link to="/playground">
+              <div id="navbarItem2" onClick={() => ItemClick(2)}>
+                Playground
+              </div>
+            </Link>
+            <Link to="/collection">
+              <div id="navbarItem3" onClick={() => ItemClick(3)}>
+                My Bots
+              </div>
+            </Link>
+            <Link to="/faq">
+              <div id="navbarItem4" onClick={() => ItemClick(4)}>
+                FAQ
+              </div>
+            </Link>
             <Link to="/">Opensea</Link>
             <Link to="/">Twitter</Link>
             <Link to="/">Discord</Link>
-            <Button onClick={() => Connect()}>Switch To Polygon Chain</Button>
+            <Button onClick={() => Connect()}>
+              {address !== "" ? address : "Switch To Polygon Chain"}
+            </Button>
           </MobileHeaderContent>
         </>
       )}

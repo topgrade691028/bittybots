@@ -16,8 +16,17 @@ import capitalize7 from "../../../assets/parts/engine/09307b.gif";
 import capitalize8 from "../../../assets/parts/engine/046480.gif";
 import capitalize9 from "../../../assets/parts/engine/063124.gif";
 import capitalize10 from "../../../assets/parts/engine/089980.gif";
-
-const Engine = () => {
+type EngineProps = {
+  SetEngine: Function;
+};
+const Engine = ({ SetEngine }: EngineProps) => {
+  const setItem = (e: any) => {
+    SetEngine(e.target.src);
+    for (let i = 1; i <= 10; i++) {
+      document.getElementById("engine" + i)?.classList.remove("border");
+    }
+    document.getElementById("engine" + e.target.id)?.classList.add("border");
+  };
   return (
     <EngineContainer>
       <EngineTitle>
@@ -25,35 +34,85 @@ const Engine = () => {
       </EngineTitle>
       <EngineDetail>Power: 190</EngineDetail>
       <EngineContent>
-        <EngineItem>
-          <img src={capitalize1} alt="capitalize" />
+        <EngineItem id="engine1">
+          <img
+            id="1"
+            src={capitalize1}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize2} alt="capitalize" />
+        <EngineItem id="engine2">
+          <img
+            id="2"
+            src={capitalize2}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize3} alt="capitalize" />
+        <EngineItem id="engine3">
+          <img
+            id="3"
+            src={capitalize3}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize4} alt="capitalize" />
+        <EngineItem id="engine4">
+          <img
+            id="4"
+            src={capitalize4}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize5} alt="capitalize" />
+        <EngineItem id="engine5">
+          <img
+            id="5"
+            src={capitalize5}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize6} alt="capitalize" />
+        <EngineItem id="engine6">
+          <img
+            id="6"
+            src={capitalize6}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize7} alt="capitalize" />
+        <EngineItem id="engine7">
+          <img
+            id="7"
+            src={capitalize7}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize8} alt="capitalize" />
+        <EngineItem id="engine8">
+          <img
+            id="8"
+            src={capitalize8}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize9} alt="capitalize" />
+        <EngineItem id="engine9">
+          <img
+            id="9"
+            src={capitalize9}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
-        <EngineItem>
-          <img src={capitalize10} alt="capitalize" />
+        <EngineItem id="engine10">
+          <img
+            id="10"
+            src={capitalize10}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </EngineItem>
       </EngineContent>
     </EngineContainer>

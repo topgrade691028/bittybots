@@ -78,7 +78,7 @@ const FAQ = () => {
         <FAQsTitle>FAQs</FAQsTitle>
         <FAQsSubTitle>Polygon</FAQsSubTitle>
         <FAQsContent>
-          <li>
+          <div>
             <PolygonTitle>What is Polygon?</PolygonTitle>
             <PolygonContent>
               Polygon is Layer 2 scaling solution for Ethereum and a fantastic
@@ -86,8 +86,8 @@ const FAQ = () => {
               gas fee of ~$0.01 or less, which is crucial for this project as we
               do 10X more on the contract compared to other projects.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>How do I get started?</PolygonTitle>
             <PolygonContent>
               Get a{" "}
@@ -96,8 +96,8 @@ const FAQ = () => {
               </a>{" "}
               chrome extension.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>How do I connect to the Polygon Chain?</PolygonTitle>
             <PolygonContent>
               If the Button on the Navbar doesn't help you add the Polygon Chain
@@ -111,8 +111,8 @@ const FAQ = () => {
               </a>{" "}
               to add the Polygon network to your Metamask wallet.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>WHow do I get MATIC or Polygon ETH?</PolygonTitle>
             <PolygonContent>
               <a
@@ -223,8 +223,8 @@ const FAQ = () => {
                 </li>
               </ul>
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>
               My wallet is connected but I don't see my bots.
             </PolygonTitle>
@@ -240,11 +240,11 @@ const FAQ = () => {
               </a>{" "}
               to a different one.
             </PolygonContent>
-          </li>
+          </div>
         </FAQsContent>
         <FAQsSubTitle>General</FAQsSubTitle>
         <FAQsContent>
-          <li>
+          <div>
             <PolygonTitle>What's an NFT?</PolygonTitle>
             <PolygonContent>
               An NFT, or “non-fungible token”, is a new way of collecting art.
@@ -254,8 +254,8 @@ const FAQ = () => {
               creative things such as airdropping, breeding, burning, or
               generating new tokens.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>Why get a BittyBot?</PolygonTitle>
             <PolygonContent>
               <ul>
@@ -271,8 +271,8 @@ const FAQ = () => {
                 </li>
               </ul>
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>
               Other collections feature 10k or fewer tokens. Isn't 20k too many?
             </PolygonTitle>
@@ -284,8 +284,8 @@ const FAQ = () => {
               collection size smaller and smaller, and in theory more expensive
               over time.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>Are BittyBots good investments?</PolygonTitle>
             <PolygonContent>
               Months of hard work have been put into this project—various
@@ -299,8 +299,8 @@ const FAQ = () => {
               developing more utility. Ultimately, if you like the art then
               there's no loss in collecting what you enjoy.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>What about profile pictures?</PolygonTitle>
             <PolygonContent>
               <img src={profile} width="100px" height="100px" alt="profile" />
@@ -308,8 +308,8 @@ const FAQ = () => {
               We will be providing a profile image png in the bot's detail page
               at launch. It will look like the png above.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>Future Plans</PolygonTitle>
             <PolygonContent>
               We believe in the smart contract aspect of the project and want to
@@ -319,15 +319,15 @@ const FAQ = () => {
               directly related to your bot's traits. Please note that we are a
               team of 2 and are working hard to build for this project.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>What can I do with my BittyBots?</PolygonTitle>
             <PolygonContent>
               You are free to use them for personal and/or commercial purposes
               under this <a href="/terms">non-exclusive license</a>.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>Why I don't see my bot right away?</PolygonTitle>
             <PolygonContent>
               Due to the fair and transparent on-chain generation mechanism,
@@ -339,17 +339,17 @@ const FAQ = () => {
               still optimizing the server but will take shorter (within 30
               minutes) after we set up everything.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>This is cool. How do I get involved?</PolygonTitle>
             <PolygonContent>
               Join our Discord to discuss with us.
             </PolygonContent>
-          </li>
+          </div>
         </FAQsContent>
         <FAQsSubTitle>Airdrops</FAQsSubTitle>
         <FAQsContent>
-          <li>
+          <div>
             <PolygonTitle>How do I claim free BittyBots?</PolygonTitle>
             <PolygonContent>
               <div>
@@ -367,18 +367,18 @@ const FAQ = () => {
               </a>{" "}
               owners.{" "}
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>Will rare Chubbies get rare BittyBots?</PolygonTitle>
             <PolygonContent>
               Godmode Chubbies (#0, #9999) will be guaranteed a rare BittyBot as
               a token of appreciation. All other Chubbies are treated the same.
             </PolygonContent>
-          </li>
+          </div>
         </FAQsContent>
         <FAQsSubTitle>Combine</FAQsSubTitle>
         <FAQsContent>
-          <li>
+          <div>
             <PolygonTitle>How do I "combine" my BittyBots?</PolygonTitle>
             <PolygonContent>
               You can head over to the Combine page (when launched) and choose
@@ -387,16 +387,16 @@ const FAQ = () => {
               from the bots you have selected. This action cannot be reverted
               and the selected BittyBots will be burned.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>Can I combine multiple times?</PolygonTitle>
             <PolygonContent>
               Combining selected bots is a one-time irreversible operation. The
               BittyBots used to combine will be burned to mint the new bot. You
               can combine bots up to 3 times.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>
               Can I combine into a BittyBot that already exists?
             </PolygonTitle>
@@ -405,8 +405,8 @@ const FAQ = () => {
               already exists. The combination used for detecting duplication is
               as follows: Helmet, Face, Body, Arm, Engine.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>What does it cost to combine?</PolygonTitle>
             <PolygonContent>
               The first combine is free of charge. The second combine will cost
@@ -414,15 +414,15 @@ const FAQ = () => {
               and third combine are only there for people who want to build the
               strongest bot.
             </PolygonContent>
-          </li>
-          <li>
+          </div>
+          <div>
             <PolygonTitle>When will the Combine feature be ready?</PolygonTitle>
             <PolygonContent>
               We will deliver this feature immediately instead of including it
               as a roadmap activation! If there are no technical difficulties
               (finger crossed), we plan to enable it as soon as reveal.
             </PolygonContent>
-          </li>
+          </div>
         </FAQsContent>
       </FAQsContainer>
     </FAQContainer>

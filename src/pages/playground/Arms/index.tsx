@@ -23,7 +23,18 @@ import capitalize14 from "../../../assets/parts/arms/061646.gif";
 import capitalize15 from "../../../assets/parts/arms/104773.gif";
 import capitalize16 from "../../../assets/parts/arms/117515.gif";
 
-const Arms = () => {
+type ArmsProps = {
+  SetArm: Function;
+};
+
+const Arms = ({ SetArm }: ArmsProps) => {
+  const setItem = (e: any) => {
+    SetArm(e.target.src);
+    for (let i = 1; i <= 16; i++) {
+      document.getElementById("cap" + i)?.classList.remove("border");
+    }
+    document.getElementById("cap" + e.target.id)?.classList.add("border");
+  };
   return (
     <ArmsContainer>
       <ArmsTitle>
@@ -31,53 +42,133 @@ const Arms = () => {
       </ArmsTitle>
       <ArmsDetail>Power: 40</ArmsDetail>
       <ArmsContent>
-        <ArmsItem>
-          <img src={capitalize1} alt="capitalize" />
+        <ArmsItem id="cap1">
+          <img
+            id="1"
+            src={capitalize1}
+            alt="capitalize"
+            onClick={(e: any) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize2} alt="capitalize" />
+        <ArmsItem id="cap2">
+          <img
+            id="2"
+            src={capitalize2}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize3} alt="capitalize" />
+        <ArmsItem id="cap3">
+          <img
+            id="3"
+            src={capitalize3}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize4} alt="capitalize" />
+        <ArmsItem id="cap4">
+          <img
+            id="4"
+            src={capitalize4}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize5} alt="capitalize" />
+        <ArmsItem id="cap5">
+          <img
+            id="5"
+            src={capitalize5}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize6} alt="capitalize" />
+        <ArmsItem id="cap6">
+          <img
+            id="6"
+            src={capitalize6}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize7} alt="capitalize" />
+        <ArmsItem id="cap7">
+          <img
+            id="7"
+            src={capitalize7}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize8} alt="capitalize" />
+        <ArmsItem id="cap8">
+          <img
+            id="8"
+            src={capitalize8}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize9} alt="capitalize" />
+        <ArmsItem id="cap9">
+          <img
+            id="9"
+            src={capitalize9}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize10} alt="capitalizealize" />
+        <ArmsItem id="cap10">
+          <img
+            id="10"
+            src={capitalize10}
+            alt="capitalizealize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalizealize11} alt="capitalize" />
+        <ArmsItem id="cap11">
+          <img
+            id="11"
+            src={capitalizealize11}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize12} alt="capitalize" />
+        <ArmsItem id="cap12">
+          <img
+            id="12"
+            src={capitalize12}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize13} alt="capitalize" />
+        <ArmsItem id="cap13">
+          <img
+            id="13"
+            src={capitalize13}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize14} alt="capitalize" />
+        <ArmsItem id="cap14">
+          <img
+            id="14"
+            src={capitalize14}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize15} alt="capitalize" />
+        <ArmsItem id="cap15">
+          <img
+            id="15"
+            src={capitalize15}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
-        <ArmsItem>
-          <img src={capitalize16} alt="capitalize" />
+        <ArmsItem id="cap16">
+          <img
+            id="16"
+            src={capitalize16}
+            alt="capitalize"
+            onClick={(e) => setItem(e)}
+          />
         </ArmsItem>
       </ArmsContent>
     </ArmsContainer>

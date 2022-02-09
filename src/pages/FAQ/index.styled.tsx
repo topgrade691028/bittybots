@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const FAQContainer = styled.div`
-  padding: 6.5rem 1.5rem 1.5rem 1.5rem;
+  padding: 3.5rem 1.5rem 1.5rem 1.5rem;
 `;
 export const KeyInfoContainer = styled.div`
   display: flex;
@@ -59,7 +59,7 @@ export const FAQsSubTitle = styled.h2`
   margin-bottom: 0.5rem;
   line-height: 1.2;
 `;
-export const FAQsContent = styled.ul`
+export const FAQsContent = styled.div`
   font-size: 20px;
   color: #212529;
   /* font-family: "Space Mono"; */
@@ -81,7 +81,7 @@ export const PolygonTitle = styled.h3`
   margin-bottom: 0.5rem;
   line-height: 1.2;
 `;
-export const PolygonContent = styled.p`
+export const PolygonContent = styled.div`
   font-family: "Space Mono";
   font-size: 16px;
   font-weight: 400;
