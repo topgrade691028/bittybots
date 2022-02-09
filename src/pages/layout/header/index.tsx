@@ -26,6 +26,17 @@ const Header = () => {
   const [y, setY] = useState(window.scrollY);
 
   useEffect(() => {
+    const handleNavigation = (e: any) => {
+      const window = e.currentTarget;
+      if (y > 10) {
+        document.getElementById("container")?.classList.add("scrollContainer");
+      } else if (y <= 10) {
+        document
+          .getElementById("container")
+          ?.classList.remove("scrollContainer");
+      }
+      setY(window.scrollY);
+    };
     window.addEventListener("scroll", (e) => handleNavigation(e));
 
     return () => {
@@ -33,15 +44,7 @@ const Header = () => {
       window.removeEventListener("scroll", (e) => handleNavigation(e));
     };
   }, [y]);
-  const handleNavigation = (e: any) => {
-    const window = e.currentTarget;
-    if (y > 10) {
-      document.getElementById("container")?.classList.add("scrollContainer");
-    } else if (y <= 10) {
-      document.getElementById("container")?.classList.remove("scrollContainer");
-    }
-    setY(window.scrollY);
-  };
+
   const Connect = () => {
     const { ethereum } = window;
     ethereum
