@@ -20,7 +20,7 @@ export const PlayGroundDisplay = styled.div`
   width: 58.3333333333%;
   @media screen and (max-width: 991px) {
     width: 100%;
-    height: auto;
+    height: 400px;
   }
   img {
     position: absolute;

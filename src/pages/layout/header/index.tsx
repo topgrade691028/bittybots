@@ -44,7 +44,11 @@ const Header = () => {
       window.removeEventListener("scroll", (e) => handleNavigation(e));
     };
   }, [y]);
-
+  useEffect(() => {
+    document
+      .getElementById("navbarItem" + 1)
+      ?.classList.add("activeNavbarItem");
+  }, []);
   const Connect = () => {
     const { ethereum } = window;
     ethereum
@@ -60,51 +64,14 @@ const Header = () => {
       .catch((err: any) => console.log(err));
   };
   const ItemClick = (e: number) => {
-    if (e === 1) {
-      document.getElementById("navbarItem1")?.classList.add("activeNavbarItem");
+    for (let i = 1; i <= 4; i++) {
       document
-        .getElementById("navbarItem2")
+        .getElementById("navbarItem" + i)
         ?.classList.remove("activeNavbarItem");
-      document
-        .getElementById("navbarItem3")
-        ?.classList.remove("activeNavbarItem");
-      document
-        .getElementById("navbarItem4")
-        ?.classList.remove("activeNavbarItem");
-    } else if (e === 2) {
-      document
-        .getElementById("navbarItem1")
-        ?.classList.remove("activeNavbarItem");
-      document.getElementById("navbarItem2")?.classList.add("activeNavbarItem");
-      document
-        .getElementById("navbarItem3")
-        ?.classList.remove("activeNavbarItem");
-      document
-        .getElementById("navbarItem4")
-        ?.classList.remove("activeNavbarItem");
-    } else if (e === 3) {
-      document
-        .getElementById("navbarItem1")
-        ?.classList.remove("activeNavbarItem");
-      document
-        .getElementById("navbarItem2")
-        ?.classList.remove("activeNavbarItem");
-      document.getElementById("navbarItem3")?.classList.add("activeNavbarItem");
-      document
-        .getElementById("navbarItem4")
-        ?.classList.remove("activeNavbarItem");
-    } else if (e === 4) {
-      document
-        .getElementById("navbarItem1")
-        ?.classList.remove("activeNavbarItem");
-      document
-        .getElementById("navbarItem2")
-        ?.classList.remove("activeNavbarItem");
-      document
-        .getElementById("navbarItem3")
-        ?.classList.remove("activeNavbarItem");
-      document.getElementById("navbarItem4")?.classList.add("activeNavbarItem");
     }
+    document
+      .getElementById("navbarItem" + e)
+      ?.classList.add("activeNavbarItem");
   };
   return (
     <HeaderContainer id="container">

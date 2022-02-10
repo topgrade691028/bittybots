@@ -7,7 +7,9 @@ export const CollectiblesContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  grid-gap: 100px;
   align-items: center;
+
   transition: all 0.85s ease-in-out;
   @media screen and (max-width: 992px) {
     flex-direction: column;
@@ -17,6 +19,7 @@ export const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   width: 37%;
   @media screen and (max-width: 992px) {
     width: 100%;
@@ -43,13 +46,20 @@ export const LogoTitle = styled.h1`
 `;
 export const GifContainer = styled.div`
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  cursor: pointer;
   img {
+    position: absolute;
     @media screen and (max-width: 576px) {
       width: 240px;
       height: auto;
     }
+  }
+  span {
+    margin-top: 350px;
   }
 `;

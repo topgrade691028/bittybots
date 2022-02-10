@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, forwardRef, useImperativeHandle } from "react";
 import {
   ArmsContainer,
   ArmsTitle,
@@ -27,7 +27,8 @@ type ArmsProps = {
   SetArm: Function;
 };
 
-const Arms = ({ SetArm }: ArmsProps) => {
+const Arms = forwardRef((props: ArmsProps, ref) => {
+  const { SetArm } = props;
   const setItem = (e: any) => {
     SetArm(e.target.src);
     for (let i = 1; i <= 16; i++) {
@@ -35,6 +36,16 @@ const Arms = ({ SetArm }: ArmsProps) => {
     }
     document.getElementById("cap" + e.target.id)?.classList.add("border");
   };
+
+  useImperativeHandle(ref, () => ({
+    RandomNumber() {
+      var Rnum = Math.floor(Math.random() * 15 + 1);
+      for (let i = 1; i <= 16; i++) {
+        document.getElementById("cap" + i)?.classList.remove("border");
+      }
+      document.getElementById("cap" + Rnum)?.classList.add("border");
+    },
+  }));
   return (
     <ArmsContainer>
       <ArmsTitle>
@@ -173,6 +184,6 @@ const Arms = ({ SetArm }: ArmsProps) => {
       </ArmsContent>
     </ArmsContainer>
   );
-};
+});
 
 export default Arms;

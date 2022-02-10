@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   PlayGroundContainer,
   PlayGroundDisplay,
@@ -14,12 +14,14 @@ import Face from "./Face";
 import Accessory from "./Accessory";
 import Engine from "./Engine";
 const PlayGround = () => {
+  const childRef = useRef<any>();
   const [gifArm, setArmSrc] = useState("");
   const [gifBody, setBodySrc] = useState("");
   const [gifEngine, setEngineSrc] = useState("");
   const [gifHelmet, setHelmetSrc] = useState("");
   const [gifFace, setFaceSrc] = useState("");
   const [gifAccessory, setAccessorySrc] = useState("");
+
   const PropsArm = (e: any) => {
     setArmSrc(e);
   };
@@ -76,9 +78,12 @@ const PlayGround = () => {
         <PlayGroundTitle>Select Parts</PlayGroundTitle>
         <Detail>Possible Combinations: 4587520</Detail>
         <CombineContent>
-          <span>Press Enter to</span> <button>Randomize</button>
+          <span>Press Enter to</span>
+          <button onClick={() => childRef.current.RandomNumber()}>
+            Randomize
+          </button>
         </CombineContent>
-        <Arms SetArm={PropsArm} />
+        <Arms SetArm={PropsArm} ref={childRef} />
         <Body SetBody={PropsBody} />
         <Engine SetEngine={PropsEngine} />
         <Helmet SetHelmet={PropsHelmet} />
